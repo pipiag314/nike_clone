@@ -36,7 +36,7 @@
     @apply sm:py-24 py-12;
   }
 
-  .padding-l {
+  .padding-large {
     @apply sm:pl-16 pl-8;
   }
 
