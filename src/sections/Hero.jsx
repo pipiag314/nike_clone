@@ -19,7 +19,8 @@ const Hero = () => {
       className="flex flex-col lg:flex-row justify-center min-h-screen max-container">
       <div
         className="relative
-                  xl:w-2/5 
+                  xl:w-[40%] 
+                  max-xl:w-[100%]
                   flex flex-col 
                   justify-center 
                   items-start 
@@ -29,8 +30,8 @@ const Hero = () => {
         <p className="text-xl font-montserrat text-coral-red">
           Our Summer Collection
         </p>
-        <h1 className="mt-10 text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
+        <h1 className="mt-10 z-10 text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
+          <span className="xl:bg-white relative xl:whitespace-nowrap overflow-visible z-10 pr-10">
             The New Arrival
           </span>
           <br />
@@ -64,7 +65,7 @@ const Hero = () => {
         <img
           src={imgSrc}
           alt="shoe"
-          width={610}
+          width={600}
           height={500}
           className="object-contain relative z-10 max-w-none"
         />
