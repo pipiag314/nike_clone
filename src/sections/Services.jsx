@@ -13,7 +13,7 @@ const Services = () => {
       </h1>
       <div className="flex justify-center flex-wrap gap-16 mt-10">
         {services.map(service => (
-          <ServiceCardComponent service={service} />
+          <ServiceCardComponent key={service.label} service={service} />
         ))}
       </div>
     </section>
