@@ -36,7 +36,9 @@ export default {
         'card': "url('assets/images/thumbnail-background.svg')",
       },
       screens: {
-        "wide": "1440px"
+        "wide": "1440px",
+        "1110": "1110px",
+        "800": "800px",
       }
     },
   },
