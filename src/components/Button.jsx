@@ -1,11 +1,13 @@
-const Button = ({ content, icon }) => {
+import { twMerge } from "tailwind-merge";
+
+const Button = ({ content, icon = "", className = "" }) => {
   return (
-    <button className="py-3 px-4 flex justify-center 
+    <button className={twMerge(`py-3 px-4 flex justify-center 
                         items-center gap-2 border border-coral-red font-montserrat 
-                        text-lg leading-none bg-coral-red rounded-full text-white"
+                        text-lg leading-none bg-coral-red rounded-full text-white`, className)}
     >
       {content}
-      <img src={icon} alt="icon" className="ml-2 rounded-full w-5 h-5" />
+      {icon && <img src={icon} alt="icon" className="ml-2 rounded-full w-5 h-5" />}
     </button>
   );
 };
