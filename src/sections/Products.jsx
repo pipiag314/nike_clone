@@ -24,13 +24,12 @@ const Products = () => {
       <div
         className="
         grid
-        lg:grid-cols-4
-        md:grid-cols-3
-        sm:grid-cols-2
+        wide:grid-cols-4
+        1110:grid-cols-3
+        800:grid-cols-2
         mt-12
-        justify-start
-        md:gap-4
-        gap-12
+        gap-8
+        justify-around
       ">
         {products.map((product) => (
           <div key={product.name}>
