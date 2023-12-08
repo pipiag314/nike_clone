@@ -67,7 +67,7 @@ const Hero = () => {
           alt="shoe"
           width={600}
           height={500}
-          className="object-contain relative z-10 max-w-none"
+          className="object-contain relative z-10 max-w-none overflow-hidden"
         />
         <div className="flex sm:gap-6 gap-3 absolute bottom-[-30px] sm:left-[50px] sm:bottom-[-50px]">
             {shoes.map(shoe => (

@@ -21,7 +21,7 @@ const App = () => {
       <section className="padding">
         <Quality />
       </section>
-      <section className="padding-x">
+      <section className="padding">
         <Services />
       </section>
       <section className="padding">
@@ -30,7 +30,7 @@ const App = () => {
       <section className="padding bg-pale-blue">
         <CostumerReviews />
       </section>
-      <section className="padding-x sm:py-32 py-16">
+      <section className="padding sm:py-32 py-16">
         <Subscribe />
       </section>
       <section className="bg-black padding-x padding-t pb-8">
