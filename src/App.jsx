@@ -7,11 +7,18 @@ import Quality from "./sections/Quality"
 import Services from "./sections/Services"
 import Subscribe from "./sections/Subscribe"
 import Navbar from "./components/Navbar"
+import HamburgerMenu from "./components/HamburgerMenu"
+import { navLinks } from "./variables"
+import { useState } from "react"
 
 const App = () => {
+
+  const [isMenuOpened, setMenuIsOpened] = useState(false);
+  
   return (
     <main className="relative">
-      <Navbar />
+      <Navbar setMenuIsOpened={setMenuIsOpened} />
+      <HamburgerMenu navLinks={navLinks} setMenuIsOpened={setMenuIsOpened} className={isMenuOpened ? "block" : "hidden"} />
       <section className="xl:padding-large  padding-b">
         <Hero />
       </section>
